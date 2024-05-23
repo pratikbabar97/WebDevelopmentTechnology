@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form Details</title>
+    <script src="./formjavascript.js"></script>
+    <link rel="stylesheet" href="./fromcss.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <fieldset>
+        <table>
+          <h3 style="padding-left: 100px">
+            <em>This is registration form:</em>
+          </h3>
+          <form method="post" onsubmit="return validatedetails()">
+            <tr>
+              <td><label for="name">Name:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  minlength="3"
+                  autofocus
+                /><br />
+              </td>
+              <td id="errname"></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="mobileno">Mobile:</label>
+              </td>
+              <td><input type="text" name="mobile" id="mobileno" /><br /></td>
+              <td id="errno"></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="adress">Address:</label>
+              </td>
+              <td>
+                <textarea
+                  name="adress"
+                  id="adress"
+                  rows="3"
+                  cols="25"
+                ></textarea
+                ><br />
+              </td>
+              <td id="erradr"></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="Dte">Date of joining:</label>
+              </td>
+              <td><input type="date" name="date" id="Dte" /><br /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="gender">Gender:</label>
+              </td>
+              <td>
+                <input type="radio" name="gender" value="male" id="male" />
+                <label for="male">male</label>
+              </td>
+
+              <td>
+                <input type="radio" name="gender" value="female" id="female" />
+                <label for="female">female</label> <br />
+              </td>
+              <td id="errgen"></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="degree">Degree:</label>
+              </td>
+              <td>
+                <input type="radio" name="degree" value="Btech" id="Btech" />
+                <label for="Btech">Btech</label>
+              </td>
+              <td>
+                <input type="radio" name="degree" value="BE" id="BE" />
+                <label for="BE">BE</label>
+              </td>
+              <td>
+                <input type="radio" name="degree" value="phd" id="PHD" />
+                <label for="PHD">PHD</label>
+              </td>
+              <td id="errdegree"></td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="skills">Skills:</label>
+              </td>
+              <td>
+                <fieldset>
+                  <legend>Select Skills</legend>
+                  <input type="checkbox" name="skills" id="java" value="JAVA" />
+                  <label for="java">JAVA</label>
+
+                  <input type="checkbox" name="skills" id="C++" value="C++" />
+                  <label for="C++">C++</label>
+
+                  <input
+                    type="checkbox"
+                    name="skills"
+                    id="python"
+                    value="Python"
+                  />
+                  <label for="python">Python</label> <br />
+
+                  <input type="checkbox" name="skills" id="perl" value="Perl" />
+                  <label for="perl">Perl</label>
+
+                  <input
+                    type="checkbox"
+                    name="skills"
+                    id="devops"
+                    value="Devops"
+                  />
+                  <label for="devops">Devops</label>
+                </fieldset>
+              </td>
+              <td id="errskills"></td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="city">City:</label>
+              </td>
+              <td>
+                <select name="city" id="city" multiselect>
+                  <option value="select">---select one---</option>
+                  <option value="sangli">Sangli</option>
+                  <option value="kolhapur">Kolhapur</option>
+                  <option value="pune">Pune</option>
+                  <option value="mumbai">Mumbai</option>
+                </select>
+              </td>
+              <td id="errcity"></td>
+            </tr>
+
+            <tr>
+              <td>
+                <button type="submit" value="submit" id="sub" name="sumit">
+                  Register
+                </button>
+              </td>
+              <td>
+                <button type="reset" value="reset" id="reset" name="reset">
+                  clear form
+                </button>
+              </td>
+            </tr>
+          </form>
+        </table>
+      </fieldset>
+    </div>
+  </body>
+</html>

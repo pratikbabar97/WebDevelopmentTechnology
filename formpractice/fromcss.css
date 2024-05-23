@@ -1,0 +1,44 @@
+fieldset {
+    border: 3px solid rgba(2, 0, 12, 0.76);
+    border-radius: 10px;
+    padding-left: 35%;
+    margin: 10px;
+    /* height: 200vh; */
+
+}
+body{
+    margin: auto;
+}
+table {
+    border: 2px solid black;
+    margin: 0%;
+    background-color: rgba(21, 18, 248, 0.418);
+    height: 75vh;
+
+}
+
+tr {
+    border: 1px solid black;
+}
+#errname{
+     color: red;
+     
+}
+#errno{
+    color: red;
+}
+#erradr{
+    color: red;
+}
+#errgen{
+    color: red;
+}
+#errdegree{
+    color: red;
+}
+#errskills{
+    color: red;
+}
+#errcity{
+    color: red;
+}
